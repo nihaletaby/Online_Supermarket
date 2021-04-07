@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>Panda | Sign Up</title>
+
+        <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <!-- font-awesome icons -->
+		<link href="css/font-awesome.css" rel="stylesheet"/>
+		<!-- bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet"/>
+		<!-- main style -->
+		<link href="css/style.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+
+        <header class="fixed">
+            <div class="logo">
+                <a href="index.html"><img src="images/panda-logo-en.svg" alt="logo"></a>
+            </div>
+            <div class="nav_right">
+                <nav class="navbar">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li role="presentation"><a href="index.html">Home</a></li>
+                        <li role="presentation"><a href="page1.html">Page1</a></li>
+                        <li role="presentation"><a href="page2.html">Page2</a></li>
+                        <li role="presentation"><a href="log in.html">Log in</a></li>
+                        <li role="presentation"><a href="sign up.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="space"></div>
+
+        <section class="form_style">
+            <div class="container">
+                <!-- sign up -->
+                <div class="w3_login">
+                    <div class="w3_login_module">
+                        <div class="module form-module">
+                            <div class="form">
+                                <h3>Log In</h3>
+                                <h2>Login to your account</h2>
+                                <form action="#" method="post" class="bg">
+                                    <input type="text" name="Username" placeholder="Username" required=" " maxlength="12">
+                                    <input type="password" name="Password" placeholder="Password" required=" ">
+                                    <button type="submit" class="btn btn-success">Login</button>
+                                </form>
+                            </div>
+                            <div class="form">
+                                <h3>Sign Up</h3>
+                                <h2>Create an account</h2>
+                                <form action="#" method="post" class="pure-form" onsubmit="validatePassword()">
+                                    <input type="text" name="Username" placeholder="Username" required=" " maxlength="12">
+                                    <input type="password" id="Password" placeholder="Password" required=" " onchange="validatePassword()">
+                                    <input type="password" id="confirm_password" placeholder="Confirm Password" required=" " onkeyup="validatePassword()">
+                                    <input type="email" name="Email" placeholder="Email Address" required=" ">
+                                    <input type="number" name="Age" placeholder="Age">
+                                    <input type="text" name="Date of Birth" placeholder="Date of Birth" required=" " onfocus="(this.type='date')" id="date">
+                                    <button type="submit" class="btn btn-success" onclick="validatePassword()">Register</button>
+                                    <label></label>
+                                    <button type="reset" class="btn btn-danger">Clear</button>                                  
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <footer class="f-fixed">
+            <div class="footer">
+                <ul class="fot footer-fot nav-pills">
+                    <li role="presentation"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>(+966) 122 394 000</a></li>
+                    <li role="presentation"><a href="mailto:customercare@panda.com.sa"><i class="fa fa-envelope-o" aria-hidden="true"></i>customercare@panda.com.sa</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
+
+
+        <!-- js -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- main script -->
+        <script src="js/script.js"></script>
+        <script src="js/confirmPS.js"></script>
+    </body>
+</html>
